@@ -1,4 +1,4 @@
-# Generate NPM Authentication Token
+# Generate NPM Authentication Token ![Continous Integration](https://github.com/KTH/docker-generate-npm-authtoken/actions/workflows/main.yml/badge.svg)
 
 Input credentials, output auth token.
 
