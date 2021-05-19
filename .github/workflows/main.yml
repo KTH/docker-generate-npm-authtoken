@@ -30,8 +30,8 @@ jobs:
       - name: Build, Test and Push with Evolene
         run: |
           SLACK_CHANNELS=#team-pipeline-build \
-          BUILD_INFORMATION_OUTPUT_FILE='/config/version.js' \
+          BUILD_INFORMATION_OUTPUT_FILE='/version.conf' \
           PUSH_PUBLIC="True" \
           SKIP_DRY_RUN="True" \
-          
+
           ${{ secrets.EVOLENE_RUN_COMMAND }}
