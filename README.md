@@ -2,7 +2,7 @@
 
 Input credentials, output auth token.
 
-This is a fork fork of kthse/generate-npm-authtoken. It uses `Alpine Linux` instead of a full blown Linux dist. Reducing image size to 100Mb from about 1Gb.
+This is a fork fork of *bravissimolabs/generate-npm-authtoken*. It uses `Alpine Linux` instead of a full blown Linux dist. Reducing image size to 100Mb from about 1Gb.
 
 ## Why
 
