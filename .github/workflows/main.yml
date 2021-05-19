@@ -32,4 +32,6 @@ jobs:
           SLACK_CHANNELS=#team-pipeline-build \
           BUILD_INFORMATION_OUTPUT_FILE='/config/version.js' \
           PUSH_PUBLIC="True" \
+          SKIP_DRY_RUN="True" \
+          
           ${{ secrets.EVOLENE_RUN_COMMAND }}
