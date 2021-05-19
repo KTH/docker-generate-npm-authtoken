@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ -z "$NPM_USER" ]; then
     echo "NPM_USER is not set!"

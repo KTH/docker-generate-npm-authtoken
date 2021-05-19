@@ -1,16 +1,11 @@
-FROM node:12-stretch
-MAINTAINER Adam K Dean <adamkdean@googlemail.com>
+FROM node:16-alpine
 
-# Add git and expect
-RUN apt update && apt -y install \
-	git expect-dev
+RUN apk update && \
+    apk upgrade && \
+    apk add --no-cache expect && \
+    rm -rf /var/cache/apk/*
 
 # Copy the login scripts
 COPY bin/ /usr/local/bin
 
-# Clean up
-RUN apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    rm /var/log/lastlog /var/log/faillog
-
-CMD ["bash", "/usr/local/bin/npm.sh"]
+CMD ["bin/sh", "/usr/local/bin/npm.sh"]
