@@ -1,0 +1,1 @@
+// will be replaced by Evolene CI with information about a build.
