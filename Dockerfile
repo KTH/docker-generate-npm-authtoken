@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM kthse/kth-nodejs:16.0.0
 
 RUN apk update && \
     apk upgrade && \
